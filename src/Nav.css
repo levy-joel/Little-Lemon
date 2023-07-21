@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 30px 40px 30px 40px;
+    align-items: center;
+    background-color: #EDEFEE;
+}
+
+.nav-item {
+    margin-right: 20px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.logo {
+    height: 2lh;
+}

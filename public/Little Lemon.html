@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://localhost:3000/#reservation -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta property="og:title" content="Little Lemon">
+    <meta property="og:description" content="Little Lemon is a charming neighborhood bistro in a lively but casual environment. Locally-sourced menu with daily specials.">
+    <meta property="og:image" content="/restauranfood.jpg">
+    
+    <link rel="icon" href="http://localhost:3000/icon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Little Lemon is a charming neighborhood bistro in a lively but casual environment. Locally-sourced menu with daily specials.">
+    <link rel="apple-touch-icon" href="http://localhost:3000/icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Little Lemon_files/css2" rel="stylesheet">
+    <link href="./Little Lemon_files/css2(1)" rel="stylesheet">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- <link rel="manifest" href="/manifest.json" /> -->
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Little Lemon</title>
+  <script defer="" src="./Little Lemon_files/bundle.js.download"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: 'Markazi Text', serif;
+  src: url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap');
+
+  font-family: 'Karla', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap');
+}
+
+.display_title {
+  font-family: 'Markazi Text';
+  font-size: 64pt;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #f4ce14;
+}
+
+.sub_title {
+  font-family: 'Markazi Text';
+  font-size: 40pt;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #edefee;
+}
+
+.lead_text {
+  font-family: 'Karla';
+  font-size: 18pt;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.section_title {
+  font-family: 'Karla';
+  font-size: 20pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.weeks_specials {
+  font-family: 'Karla';
+  font-size: 16pt;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.card_title {
+  font-family: 'Karla';
+  font-size: 18pt;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.paragraph_text {
+  font-family: 'Karla';
+  font-size: 16pt;
+  line-height: 1.5lh;
+  font-weight: 400;
+  text-transform: initial;
+  color: #edefee;
+  max-width: 65ch;
+}
+
+.highlight_text {
+  font-family: 'Karla';
+  font-size: 16pt;
+  font-weight: 500;
+  text-transform: initial;
+  color: #495E57;
+}
+
+.nav_text {
+  font-family: 'Karla';
+  font-size: 16pt;
+  font-weight: 400;
+  text-transform: initial;
+  color: #495E57;
+  line-height: 1.5lh;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiOztBQUVBO0VBQ0Usa0NBQWtDO0VBQ2xDLDJGQUEyRjs7RUFFM0YsZ0NBQWdDO0VBQ2hDLDRGQUE0RjtBQUM5Rjs7QUFFQTtFQUNFLDJCQUEyQjtFQUMzQixlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLDBCQUEwQjtFQUMxQixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsMEJBQTBCO0VBQzFCLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxvQkFBb0I7RUFDcEIsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQiwwQkFBMEI7RUFDMUIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLG9CQUFvQjtFQUNwQixlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0Usb0JBQW9CO0VBQ3BCLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsMEJBQTBCO0VBQzFCLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxvQkFBb0I7RUFDcEIsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQiwwQkFBMEI7RUFDMUIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLG9CQUFvQjtFQUNwQixlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQix1QkFBdUI7RUFDdkIsY0FBYztFQUNkLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxvQkFBb0I7RUFDcEIsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQix1QkFBdUI7RUFDdkIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLG9CQUFvQjtFQUNwQixlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHVCQUF1QjtFQUN2QixjQUFjO0VBQ2Qsa0JBQWtCO0FBQ3BCIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiAnTWFya2F6aSBUZXh0Jywgc2VyaWY7XG4gIHNyYzogdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PU1hcmthemkrVGV4dDp3Z2h0QDQwMDs1MDAmZGlzcGxheT1zd2FwJyk7XG5cbiAgZm9udC1mYW1pbHk6ICdLYXJsYScsIHNhbnMtc2VyaWY7XG4gIHNyYzogdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PUthcmxhOndnaHRANDAwOzUwMDs3MDA7ODAwJmRpc3BsYXk9c3dhcCcpO1xufVxuXG4uZGlzcGxheV90aXRsZSB7XG4gIGZvbnQtZmFtaWx5OiAnTWFya2F6aSBUZXh0JztcbiAgZm9udC1zaXplOiA2NHB0O1xuICBmb250LXdlaWdodDogNTAwO1xuICB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTtcbiAgY29sb3I6ICNmNGNlMTQ7XG59XG5cbi5zdWJfdGl0bGUge1xuICBmb250LWZhbWlseTogJ01hcmthemkgVGV4dCc7XG4gIGZvbnQtc2l6ZTogNDBwdDtcbiAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG4gIGNvbG9yOiAjZWRlZmVlO1xufVxuXG4ubGVhZF90ZXh0IHtcbiAgZm9udC1mYW1pbHk6ICdLYXJsYSc7XG4gIGZvbnQtc2l6ZTogMThwdDtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG4gIGNvbG9yOiAjMzMzMzMzO1xufVxuXG4uc2VjdGlvbl90aXRsZSB7XG4gIGZvbnQtZmFtaWx5OiAnS2FybGEnO1xuICBmb250LXNpemU6IDIwcHQ7XG4gIGZvbnQtd2VpZ2h0OiA4MDA7XG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gIGNvbG9yOiAjMzMzMzMzO1xufVxuXG4ud2Vla3Nfc3BlY2lhbHMge1xuICBmb250LWZhbWlseTogJ0thcmxhJztcbiAgZm9udC1zaXplOiAxNnB0O1xuICBmb250LXdlaWdodDogODAwO1xuICB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTtcbiAgY29sb3I6ICMzMzMzMzM7XG59XG5cbi5jYXJkX3RpdGxlIHtcbiAgZm9udC1mYW1pbHk6ICdLYXJsYSc7XG4gIGZvbnQtc2l6ZTogMThwdDtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG4gIGNvbG9yOiAjMzMzMzMzO1xufVxuXG4ucGFyYWdyYXBoX3RleHQge1xuICBmb250LWZhbWlseTogJ0thcmxhJztcbiAgZm9udC1zaXplOiAxNnB0O1xuICBsaW5lLWhlaWdodDogMS41bGg7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIHRleHQtdHJhbnNmb3JtOiBpbml0aWFsO1xuICBjb2xvcjogI2VkZWZlZTtcbiAgbWF4LXdpZHRoOiA2NWNoO1xufVxuXG4uaGlnaGxpZ2h0X3RleHQge1xuICBmb250LWZhbWlseTogJ0thcmxhJztcbiAgZm9udC1zaXplOiAxNnB0O1xuICBmb250LXdlaWdodDogNTAwO1xuICB0ZXh0LXRyYW5zZm9ybTogaW5pdGlhbDtcbiAgY29sb3I6ICM0OTVFNTc7XG59XG5cbi5uYXZfdGV4dCB7XG4gIGZvbnQtZmFtaWx5OiAnS2FybGEnO1xuICBmb250LXNpemU6IDE2cHQ7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIHRleHQtdHJhbnNmb3JtOiBpbml0aWFsO1xuICBjb2xvcjogIzQ5NUU1NztcbiAgbGluZS1oZWlnaHQ6IDEuNWxoO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsY0FBYztFQUNkLG9CQUFvQjtBQUN0Qjs7QUFFQTtFQUNFO0lBQ0UsNENBQTRDO0VBQzlDO0FBQ0Y7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2Qiw2QkFBNkI7RUFDN0IsWUFBWTtBQUNkOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFO0lBQ0UsdUJBQXVCO0VBQ3pCO0VBQ0E7SUFDRSx5QkFBeUI7RUFDM0I7QUFDRiIsInNvdXJjZXNDb250ZW50IjpbIi5BcHAge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5BcHAtbG9nbyB7XG4gIGhlaWdodDogNDB2bWluO1xuICBwb2ludGVyLWV2ZW50czogbm9uZTtcbn1cblxuQG1lZGlhIChwcmVmZXJzLXJlZHVjZWQtbW90aW9uOiBuby1wcmVmZXJlbmNlKSB7XG4gIC5BcHAtbG9nbyB7XG4gICAgYW5pbWF0aW9uOiBBcHAtbG9nby1zcGluIGluZmluaXRlIDIwcyBsaW5lYXI7XG4gIH1cbn1cblxuLkFwcC1oZWFkZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjgyYzM0O1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogY2FsYygxMHB4ICsgMnZtaW4pO1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5BcHAtbGluayB7XG4gIGNvbG9yOiAjNjFkYWZiO1xufVxuXG5Aa2V5ZnJhbWVzIEFwcC1sb2dvLXNwaW4ge1xuICBmcm9tIHtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZSgwZGVnKTtcbiAgfVxuICB0byB7XG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMzYwZGVnKTtcbiAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.container {
+/*     display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 70% 20% 10%; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    text-align: start;
+    background-color: #495e57;
+    padding: 20px 40px 20px 40px;
+    justify-content: space-between;
+}
+
+.header_title {
+/*     flex-basis: 2; */
+}
+
+.image_container {
+    justify-content: center;
+}
+
+.image_container img {
+    position: relative;
+    overflow-clip-margin: content-box;
+    overflow-y: 10pt;
+    top: 40px;
+    border-radius: 16pt;
+    height:20lh;
+}
+
+.reserve_button {
+    background-color: #f4ce14;
+    padding: 15px 30px 15px 30px;
+    border-radius: 16pt;
+    border-style: hidden;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9IZWFkZXIuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7O3NDQUVzQztJQUNsQyxhQUFhO0lBQ2IsZUFBZTtJQUNmLFNBQVM7SUFDVCxpQkFBaUI7SUFDakIseUJBQXlCO0lBQ3pCLDRCQUE0QjtJQUM1Qiw4QkFBOEI7QUFDbEM7O0FBRUE7QUFDQSx1QkFBdUI7QUFDdkI7O0FBRUE7SUFDSSx1QkFBdUI7QUFDM0I7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixTQUFTO0lBQ1QsbUJBQW1CO0lBQ25CLFdBQVc7QUFDZjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6Qiw0QkFBNEI7SUFDNUIsbUJBQW1CO0lBQ25CLG9CQUFvQjtBQUN4QiIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xyXG4vKiAgICAgZGlzcGxheTogZ3JpZDtcclxuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogNjUlIDM1JTtcclxuICAgIGdyaWQtdGVtcGxhdGUtcm93czogNzAlIDIwJSAxMCU7ICovXHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC13cmFwOiB3cmFwO1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgdGV4dC1hbGlnbjogc3RhcnQ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNDk1ZTU3O1xyXG4gICAgcGFkZGluZzogMjBweCA0MHB4IDIwcHggNDBweDtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxufVxyXG5cclxuLmhlYWRlcl90aXRsZSB7XHJcbi8qICAgICBmbGV4LWJhc2lzOiAyOyAqL1xyXG59XHJcblxyXG4uaW1hZ2VfY29udGFpbmVyIHtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG4uaW1hZ2VfY29udGFpbmVyIGltZyB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICBvdmVyZmxvdy1jbGlwLW1hcmdpbjogY29udGVudC1ib3g7XHJcbiAgICBvdmVyZmxvdy15OiAxMHB0O1xyXG4gICAgdG9wOiA0MHB4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogMTZwdDtcclxuICAgIGhlaWdodDoyMGxoO1xyXG59XHJcblxyXG4ucmVzZXJ2ZV9idXR0b24ge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2Y0Y2UxNDtcclxuICAgIHBhZGRpbmc6IDE1cHggMzBweCAxNXB4IDMwcHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxNnB0O1xyXG4gICAgYm9yZGVyLXN0eWxlOiBoaWRkZW47XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>#nav_bar {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #EDEFEE;
+    padding: 20px 40px 20px 40px;
+}
+
+.horizontal_nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+#nav_bar img {
+    height:5vw;
+    align-items: center;
+}
+
+.horizontal_nav li a {
+    text-decoration: none;
+    color: #333333;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9OYXYuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixrQkFBa0I7SUFDbEIsOEJBQThCO0lBQzlCLHlCQUF5QjtJQUN6Qiw0QkFBNEI7QUFDaEM7O0FBRUE7SUFDSSxnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLGVBQWU7SUFDZiw4QkFBOEI7SUFDOUIsZUFBZTtBQUNuQjs7QUFFQTtJQUNJLFVBQVU7SUFDVixtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsY0FBYztBQUNsQiIsInNvdXJjZXNDb250ZW50IjpbIiNuYXZfYmFyIHtcclxuICAgIGRpc3BsYXk6IGdyaWQ7XHJcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDMwJSA3MCU7XHJcbiAgICBhbGlnbi1pdGVtczpjZW50ZXI7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRURFRkVFO1xyXG4gICAgcGFkZGluZzogMjBweCA0MHB4IDIwcHggNDBweDtcclxufVxyXG5cclxuLmhvcml6b250YWxfbmF2IHtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC13cmFwOiB3cmFwO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgcGFkZGluZy1sZWZ0OiAwO1xyXG59XHJcblxyXG4jbmF2X2JhciBpbWcge1xyXG4gICAgaGVpZ2h0OjV2dztcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5ob3Jpem9udGFsX25hdiBsaSBhIHtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGNvbG9yOiAjMzMzMzMzO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>#footer_bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EDEFEE;
+    padding: 20px 40px 20px 40px;
+}
+
+#footer_bar ul {
+    list-style: none;
+    padding: 0;
+    text-align: start;
+}
+
+#footer_bar img {
+    align-items: center;
+    height: 5lh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer_nav li a {
+    text-decoration: none;
+    color: #333333;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9NYWluLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIseUJBQXlCO0lBQ3pCLDRCQUE0QjtBQUNoQzs7QUFFQTtJQUNJLGdCQUFnQjtJQUNoQixVQUFVO0lBQ1YsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0kscUJBQXFCO0lBQ3JCLGNBQWM7QUFDbEIiLCJzb3VyY2VzQ29udGVudCI6WyIjZm9vdGVyX2JhciB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0VERUZFRTtcclxuICAgIHBhZGRpbmc6IDIwcHggNDBweCAyMHB4IDQwcHg7XHJcbn1cclxuXHJcbiNmb290ZXJfYmFyIHVsIHtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICAgdGV4dC1hbGlnbjogc3RhcnQ7XHJcbn1cclxuXHJcbiNmb290ZXJfYmFyIGltZyB7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgaGVpZ2h0OiA1bGg7XHJcbiAgICBtYXJnaW4tdG9wOiBhdXRvO1xyXG4gICAgbWFyZ2luLWJvdHRvbTogYXV0bztcclxufVxyXG5cclxuLmZvb3Rlcl9uYXYgbGkgYSB7XHJcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbiAgICBjb2xvcjogIzMzMzMzMztcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>#footer_bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EDEFEE;
+    padding: 20px 40px 20px 40px;
+}
+
+#footer_bar ul {
+    list-style: none;
+    padding: 0;
+    text-align: start;
+}
+
+#footer_bar img {
+    align-items: center;
+    height: 5lh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer_nav li a {
+    text-decoration: none;
+    color: #333333;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9Gb290ZXIuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5Qix5QkFBeUI7SUFDekIsNEJBQTRCO0FBQ2hDOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLFVBQVU7SUFDVixpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxtQkFBbUI7SUFDbkIsV0FBVztJQUNYLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsY0FBYztBQUNsQiIsInNvdXJjZXNDb250ZW50IjpbIiNmb290ZXJfYmFyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRURFRkVFO1xyXG4gICAgcGFkZGluZzogMjBweCA0MHB4IDIwcHggNDBweDtcclxufVxyXG5cclxuI2Zvb3Rlcl9iYXIgdWwge1xyXG4gICAgbGlzdC1zdHlsZTogbm9uZTtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgICB0ZXh0LWFsaWduOiBzdGFydDtcclxufVxyXG5cclxuI2Zvb3Rlcl9iYXIgaW1nIHtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBoZWlnaHQ6IDVsaDtcclxuICAgIG1hcmdpbi10b3A6IGF1dG87XHJcbiAgICBtYXJnaW4tYm90dG9tOiBhdXRvO1xyXG59XHJcblxyXG4uZm9vdGVyX25hdiBsaSBhIHtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgIGNvbG9yOiAjMzMzMzMzO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><nav id="nav_bar" class="nav_text"><img src="./Little Lemon_files/Logo.svg" alt="Little Lemon Logo"><section><ul class="horizontal_nav"><li><a href="http://localhost:3000/#home">Home</a></li><li><a href="http://localhost:3000/#about">About</a></li><li><a href="http://localhost:3000/#menu">Menu</a></li><li><a href="http://localhost:3000/#reservation">Reservation</a></li><li><a href="http://localhost:3000/#order-online">Order Online</a></li><li><a href="http://localhost:3000/#login">Login</a></li></ul></section></nav><header class="container"><section class="header_title"><div class="display_title">Little Lemon</div><div class="sub_title">Chicago</div><p class="paragraph_text description">Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.</p><button class="reserve_button lead_text">reserve a table</button></section><section class="image_container"><img src="./Little Lemon_files/restauranfood.jpg" alt="Our favorite dish"></section></header><main>Main</main></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>
