@@ -1,33 +1,32 @@
+import './Footer.css';
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
     return (
-        <footer>
-            <img src="Logo-buttom.svg" alt="Little Lemon Logo" width="120rem"></img>
-            <menu>
-                <ul id="nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#reservation">Reservation</a></li>
-                    <li><a href="#order-online">Order Online</a></li>
-                    <li><a href="#login">Login</a></li>
-                </ul>
-            </menu>
-            <aside>
-                <b>Contact</b>
-                <p>
-                    Address: 20 Lemons street, NY<br/>
-                    Phone Number: 0123-45678910<br/>
-                    Email: <a href="mailto:little_lemon@restaurant.com">little_lemon@restaurant.com</a>
-                </p>
-            </aside>
-            <aside>
-                <b>Social Media</b><br/>
-                <a href="https://www.facebook.com/">Facebook link</a><br/>
-                <a href="https://www.instagram.com/">Instagram link</a>
-            </aside>
-
-
-
+        <footer className='footer-container'>
+            <img className='logo-buttom' src="Logo-buttom.svg" alt="Little Lemon Logo"></img>
+            <div className='site-map'>
+                <b className='site-map-item'>Site Map</b>
+                <Link to='/' className='site-map-item'>Homepage</Link>
+                <Link to='/Menu' className='site-map-item'>Menu</Link>
+                <Link to='/Reservation' className='site-map-item'>Reserve a Table</Link>
+                <Link to='/OrderOnline' className='site-map-item'>Order Online</Link>
+                <Link to='/About' className='site-map-item'>About</Link>
+            </div>
+            <div className='contact'>
+                <b className='contact-item'>Contact us</b>
+                <span className='contact-item'>Address: 20 Lemons street, NY</span>
+                <span className='contact-item'>Phone Number: 0123-45678910</span>
+                <span className='contact-item'>Email: <a href="mailto:chicago@littlelemon.com">chicago@littlelemon.com</a></span>
+                <div className='social'>
+                    <span><a className='social-item' href="https://www.facebook.com/">
+                        <img src='icons8-facebook.svg' width="30px" alt='Find us on Facebook'></img></a>
+                    </span>
+                    <p><a className='social-item' href="https://www.instagram.com/">
+                        <img src='icons8-instagram.svg' width="30px" alt='Find us on Instagram'></img></a>
+                    </p>
+                </div>
+            </div>
         </footer>
     );
 };

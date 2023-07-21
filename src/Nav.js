@@ -1,15 +1,17 @@
+import './Nav.css';
+import { Link } from 'react-router-dom';
+
 const Nav = () => {
     return (
-        <nav>
-            <img src="Logo.svg" alt="Little Lemon Logo"></img>
-            <ul id="horizontal-nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reservation">Reservation</a></li>
-                <li><a href="#order-online">Order Online</a></li>
-                <li><a href="#login">Login</a></li>
-            </ul>
+        <nav className='nav-container'>
+            <Link to='/' className='nav-item'>
+                <img src="Logo.svg" alt="Little Lemon Logo" className='logo' />
+            </Link>
+            <Link to='/' className='nav-item'>Homepage</Link>
+            <Link to='/Menu' className='nav-item'>Menu</Link>
+            <Link to='/Reservation' className='nav-item'>Reserve a Table</Link>
+            <Link to='/OrderOnline' className='nav-item'>Order Online</Link>
+            <Link to='/About' className='nav-item'>About</Link>
         </nav>
     );
 };
