@@ -34,3 +34,57 @@
 .logo {
     height: 2lh;
 }
+
+.nav-mobile-container {
+    display: none;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    background-color: #555;
+    height: auto;
+    color: white;
+}
+
+.nav-bar-mobile {
+    overflow: hidden;
+    background-color: #333333;
+    position: relative;
+}
+
+.nav-bar-mobile a {
+    display: block;
+    color: white;
+    padding: 20px 40px;
+    text-decoration: none;
+}
+
+.hamburger_icon_mobile {
+    display: none;
+    color: #333333;
+}
+
+.nav-bar-mobile a:hover {
+    background-color: white;
+    color: #333333;
+}
+
+.menu-open {
+    display: block;
+}
+
+@media (width < 1000px) {
+    .hamburger_icon_mobile {
+        display: block;
+    }
+
+    .nav-item {
+        display: none;
+    }
+}
+
+@media (width > 1000px) {
+    .nav-mobile-container {
+        display: none;
+    }
+}

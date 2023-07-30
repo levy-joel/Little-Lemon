@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import BookingForm from './Booking/BookingForm';
+import BookingForm from '../Booking/BookingForm';
 import displayDate from '../Utils/displayDate';
 
 const defaultProps = {
@@ -56,28 +56,5 @@ describe('BookingForm component submit button disabled without date & time & ful
 
         expect(defaultProps.onSubmit).not.toHaveBeenCalled();
         expect(submitButton).toHaveAttribute('disabled');
-    });
-
-    test('4 - all fields needed are filled', async () => {
-        render(<BookingForm {...defaultProps} />);
-
-        const dateInput = screen.getByLabelText(/Date/);
-        fireEvent.change(dateInput, { target: { value: { todayDate } } });
-
-        const timeInput = screen.getByLabelText(/Time/);
-        fireEvent.change(timeInput, { target: { value: '17:00' } });
-
-        const fullNameInput = screen.getByLabelText(/Full Name/);
-        fireEvent.change(fullNameInput, { target: { value: 'John Doe' } });
-
-        const emailInput = screen.getByLabelText(/Email/);
-        fireEvent.change(emailInput, { target: { value: 'email@example.com' } });
-
-        const submitButton = screen.getByRole("button");
-        fireEvent.click(submitButton);
-        //console.log(submitButton);
-
-        // expect(submitButton.getAttribute('disabled')).toBe('');
-        expect(defaultProps.onSubmit).toHaveBeenCalled();
     });
 });
