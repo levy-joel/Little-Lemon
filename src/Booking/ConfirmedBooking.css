@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.confirmed-booking-container {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: white;
+    padding: 110px 40px 40px 40px;
+    justify-content: space-between;
+}
+
+.confirmed-booking-container h3,
+.confirmed-booking-container h4,
+.confirmed-booking-container p {
+    margin-bottom: 40px;
+}
