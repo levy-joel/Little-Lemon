@@ -9,7 +9,7 @@ const Footer = () => {
                 <b className='site-map-item'>Site Map</b>
                 <Link to='/' className='site-map-item'>Homepage</Link>
                 <Link to='/Menu' className='site-map-item'>Menu</Link>
-                <Link to='/Reservation' className='site-map-item'>Reserve a Table</Link>
+                <Link to='/BookingPage' className='site-map-item'>Book a Table</Link>
                 <Link to='/OrderOnline' className='site-map-item'>Order Online</Link>
                 <Link to='/About' className='site-map-item'>About</Link>
             </div>

@@ -4,12 +4,25 @@
 }
 
 .nav-container {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-bar {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 30px 40px 30px 40px;
     align-items: center;
     background-color: #EDEFEE;
+    height: 30px;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
 }
 
 .nav-item {

@@ -54,3 +54,13 @@ p {
   text-transform: initial;
   max-width: 65ch;
 }
+
+.button {
+  background-color: #f4ce14;
+  width: 230px;
+  height: 65px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 16pt;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px
+}

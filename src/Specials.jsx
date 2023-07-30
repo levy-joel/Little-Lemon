@@ -1,3 +1,5 @@
+import SpecialsCard from './SpecialsCard';
+import { useNavigate } from "react-router-dom";
 import './Specials.css'
 
 const specialsData = [
@@ -24,35 +26,23 @@ const specialsData = [
     },
 ];
 
-const SpecialsCard = ({title, description, price, image}) => {
-    return (
-        <div className='special-card'>
-            <div className='image_text'>
-                <div className='image'>
-                    <img src={image} alt={title}></img>
-                </div>
-                <div className='title_price'>
-                    <h4>{title}</h4>
-                    <h5>{price}</h5>
-                </div>
-                <p className='description'>{description}</p>
-            </div>
-            <div>
-                <a className='order-delivery' href='#order'>
-                    <p>Order a delivery</p>
-                    <img src='delivery.svg' alt='Delivery'></img>
-                </a>
-            </div>
-        </div>
-    );
-};
-
 const Specials = () => {
+    const navigate = useNavigate();
+
+    const handleOrderOnlineClick = () => {
+        navigate("/OrderOnline");
+    }
+
     return (
         <div className='specials-container'>
             <div className='specials-title'>
                 <h3>This weeks specials!</h3>
-                <button className='order-online'><h5>Order Online</h5></button>
+                <button
+                    type='button'
+                    className='button'
+                    onClick={handleOrderOnlineClick}>
+                        <h5>Order Online</h5>
+                </button>
             </div>
             <div className='specials-cards'>
                 {specialsData.map(dish => {
